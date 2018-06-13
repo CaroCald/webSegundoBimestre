@@ -21,3 +21,13 @@ function cambiarBordeTable() {
     const etiquetaTablita:any=document.getElementById('tablita');
     etiquetaTablita.className=  etiquetaTablita.class+'border-azul';
 }
+function crearContenido() {
+    const etiquetaContenedora:any=document.getElementById('contenido');
+    const parrafo= document.createElement("p");
+    parrafo.innerText='hola mundo';
+    const imagen= document.createElement("img");
+    imagen.src=caro.urlImagen;
+    etiquetaContenedora.appendChild(parrafo);
+    etiquetaContenedora.appendChild(imagen);
+
+}

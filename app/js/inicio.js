@@ -20,3 +20,12 @@ function cambiarBordeTable() {
     var etiquetaTablita = document.getElementById('tablita');
     etiquetaTablita.className = etiquetaTablita.class + 'border-azul';
 }
+function crearContenido() {
+    var etiquetaContenedora = document.getElementById('contenido');
+    var parrafo = document.createElement("p");
+    parrafo.innerText = 'hola mundo';
+    var imagen = document.createElement("img");
+    imagen.src = caro.urlImagen;
+    etiquetaContenedora.appendChild(parrafo);
+    etiquetaContenedora.appendChild(imagen);
+}
