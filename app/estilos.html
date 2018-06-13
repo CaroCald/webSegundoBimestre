@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilos</title>
+    <style> /*estilos CSS*/
+    /*MEDIANTE UN ID*/
+
+    /*MEDIANTE etiquetas*/
+        td, th{
+            border-style: solid;
+            border-width: 1px;
+            border-color: brown;
+        }
+        table{
+            border-style: solid;
+            border-width: 4px;
+        }
+
+    /*MEDIANTE clases*/
+    .border-cafe{
+    border-color: brown;
+    }
+    .border-azul{
+        border-color: blue;
+    }
+        .rojo{
+            color: red;
+        }
+
+    </style>
+    <link rel="stylesheet" href="estilos/estilos-generales.css">
+
+</head>
+<body>
+
+<h1>Javascript</h1>
+<img class="imagen" id="imagen" src="https://i.pinimg.com/736x/c8/1e/96/c81e969bddc3fd049d03929c6b31ffcd--screen-wallpaper-iphone--wallpaper.jpg" alt="imagen1">
+<button onclick="cambiarImagen()">cambiar Imagen</button>
+
+
+<table id="tablita" class="border-azul" style="">
+    <tr class="rojo">
+        <th>nombre</th>
+        <th>apellido</th>
+    </tr>
+    <tr>
+        <td>carolina</td>
+        <td>calderon</td>
+    </tr>
+    <tr>
+        <td>dsjdjadsjjsddkjasd</td>
+        <td>ddsad</td>
+    </tr>
+</table>
+
+<button onclick="cambiarBordeTable()">cambiar Tabla</button>
+
+<table class="border-azul">
+    <tr class="rojo">
+        <th>nombre</th>
+        <th>apellido</th>
+    </tr>
+    <tr>
+        <td>carolina</td>
+        <td>calderon</td>
+    </tr>
+    <tr>
+        <td>dsjdjadsjjsddkjasd</td>
+        <td>ddsad</td>
+    </tr>
+</table>
+
+
+<script>
+    console.log('hola mundo');
+</script>
+<script src="js/inicio.js"> </script>
+</body>
+</html>
